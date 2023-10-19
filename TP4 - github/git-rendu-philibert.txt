@@ -1,0 +1,78 @@
+Voici la sortie de la commande git config --list et après avoir fait les autres commandes 
+
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Users/gentien/AppData/Local/Programs/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Philibert
+user.email=philibert.jules.ferry@gmail.com
+http.proxy=http://10.0.0.1:80
+
+Arpès avoir utiliser la commande git init on obtient :
+        Initialized empty Git repository in //SRV-2019/gentien$/SIN/Hamadouche/TP4 - Formation - git/.git/
+
+
+Arpès avoir utiliser la commande git status on obtient :
+        On branch master
+
+        No commits yet
+
+        Untracked files:
+        (use "git add <file>..." to include in what will be committed)
+                git-rendu-philibert.txt
+
+        nothing added to commit but untracked files present (use "git add" to track)
+
+
+
+Arpès avoir utiliser la commande git status on obtient :
+        On branch master
+
+        No commits yet
+
+        Changes to be committed:
+        (use "git rm --cached <file>..." to unstage)
+                new file:   git-rendu-philibert.txt
+
+
+Arpès avoir utiliser la commande git commit -m "premierecommit" on obtient :
+        [master (root-commit) 6934c11] premierecommit
+        1 file changed, 39 insertions(+)
+        create mode 100644 git-rendu-philibert.txt
+
+Après avoir utiliser la commande git log --oneline on obtient :
+        6934c11 (HEAD -> master) premierecommit
+
+Après avoir utiliser la commande git log on obtient : 
+        Author: Philibert <philibert.jules.ferry@gmail.com>
+        Date:   Tue Oct 3 13:58:17 2023 +0200
+
+            premierecommit
+
+Après avoir utiliser la commande git status et en ayant créé le dosier template et le fichier test.html on obtient :
+    On branch master
+        Changes not staged for commit:
+        (use "git add <file>..." to update what will be committed)
+        (use "git restore <file>..." to discard changes in working directory)
+                modified:   git-rendu-philibert.txt
+
+        Untracked files:
+        (use "git add <file>..." to include in what will be committed)
+                index.html
+                template/
+
+        no changes added to commit (use "git add" and/or "git commit -a")
+
+J'obtient ce résultat car je modifie à chaque fois le fichier en extension .txt qui est mon rendu
+de plus il y a des changements vu par git, qui ne seront pas ajouter lors d'un git commit
+

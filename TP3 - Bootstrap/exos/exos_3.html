@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>IDENTIFICATION</h1>
+        <div class="form-group">
+            <form>
+                <label for="nom">Nom:</label>
+                <input type="text" class="form-control" id="nom" placeholder="Entrer votre nom" name="nom">
+                <label for="Prenom">Prenom:</label>
+                <input type="text" class="form-control" id="prenom" placeholder="Enter votre prenom" name="prenom">
+                <label for="tele">Téléphone:</label>
+                <input type="tel" class="form-control" id="telephone" placeholder="Enter votre téléphone" name="tel">
+                <label for="msg">Message:</label>
+
+                <textarea name="msg" id="msg" cols="30" rows="10" class="form-control"></textarea>
+                
+                <br>
+                <label>Céréale avant ou après le lait:</label>
+                <br>
+                <label for="before">Avant</label>
+                <input type="radio" name="radio_input" id="before">
+                <br>
+                <label for="after">Après</label>
+                <input type="radio" name="radio_input" id="after">
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
